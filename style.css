@@ -1,0 +1,91 @@
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 30px;
+
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 25px;
+
+  text-transform: uppercase;
+}
+p {
+  font-size: 18px;
+
+  line-height: 1.5;
+}
+h4 {
+  font-size: 22px;
+  text-align: center;
+}
+li {
+  font-size: 18px;
+}
+footer p {
+  font-size: 15px;
+}
+.author {
+  font-style: italic;
+}
+.copyright {
+  font-size: 16px;
+}
+.related_author {
+  font-weight: bold;
+}
+.unordered {
+  list-style: none;
+}
+.main-header {
+  background-color: #f7f7f7;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+/* body {
+  background-color: aqua;
+} */
+
+/* Pseudo Class */
+li:first-child {
+  font-weight: bold;
+}
+li:nth-child(2) {
+  color: red;
+}
+
+/* Styling hyperLinks */
+/* a {
+  color: red;
+} */
+/* should be just LINK */
+a:any-link {
+  text-decoration: none;
+  color: red;
+}
+a:visited {
+  color: yellow;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: red;
+  font-weight: bold;
+}
