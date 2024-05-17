@@ -1,12 +1,11 @@
-h1,
-h2,
-h3,
-p,
-li {
+/* Global Styles */
+body {
   font-family: sans-serif;
   color: #444;
+  border-top: 5px solid #1098ad;
 }
 
+/* Heading Styles */
 h1,
 h2,
 h3 {
@@ -14,30 +13,41 @@ h3 {
 }
 h1 {
   font-size: 30px;
-
   text-transform: uppercase;
   font-style: italic;
 }
 h2 {
   font-size: 25px;
-
   text-transform: uppercase;
-}
-p {
-  font-size: 18px;
-
-  line-height: 1.5;
 }
 h4 {
   font-size: 22px;
   text-align: center;
 }
+
+/* Paragraph Styles */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* List Item Styles */
 li {
   font-size: 18px;
 }
+li:first-child {
+  font-weight: bold;
+}
+li:nth-child(2) {
+  color: red;
+}
+
+/* Footer Styles */
 footer p {
   font-size: 15px;
 }
+
+/* Class Styles */
 .author {
   font-style: italic;
 }
@@ -50,34 +60,23 @@ footer p {
 .unordered {
   list-style: none;
 }
+
+/* Header Styles */
 .main-header {
   background-color: #f7f7f7;
 }
+
+/* Aside Styles */
 aside {
-  background-color: #f7f7f7;
+  background-color: #f7f7f7a2;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
-/* body {
-  background-color: aqua;
-} */
 
-/* Pseudo Class */
-li:first-child {
-  font-weight: bold;
-}
-li:nth-child(2) {
-  color: red;
-}
-
-/* Styling hyperLinks */
-/* a {
-  color: red;
-} */
-/* should be just LINK */
-a:any-link {
+/* Link Styles */
+a:link {
+  color: black;
   text-decoration: none;
-  color: red;
 }
 a:visited {
   color: yellow;
