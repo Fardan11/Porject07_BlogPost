@@ -1,15 +1,40 @@
-/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Centering content trick, we here specify the div container size then put padding to auto*/
+.center-content {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  /* another way
+  margin: 0 auto; */
+}
 body {
   font-family: sans-serif;
   color: #444;
   border-top: 5px solid #1098ad;
 }
-
+nav {
+  font-size: 18px;
+}
+article {
+  margin-bottom: 50px;
+}
 /* Heading Styles */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 40px;
+}
+.post-header {
+  margin: 30px 0px;
+}
 h1,
 h2,
 h3 {
   color: #1098ad;
+  margin-bottom: 25px;
 }
 h1 {
   font-size: 30px;
@@ -19,6 +44,7 @@ h1 {
 h2 {
   font-size: 25px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 h4 {
   font-size: 22px;
@@ -29,18 +55,23 @@ h4 {
 p {
   font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 /* List Item Styles */
+/* sudo class */
+
 li {
-  font-size: 18px;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
-li:first-child {
+/* li:first-child {
   font-weight: bold;
 }
 li:nth-child(2) {
   color: red;
-}
+} */
 
 /* Footer Styles */
 footer p {
@@ -52,7 +83,9 @@ footer p {
   font-style: italic;
 }
 .copyright {
-  font-size: 16px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 .related_author {
   font-weight: bold;
@@ -71,15 +104,18 @@ aside {
   background-color: #f7f7f7a2;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  padding-left: 20px;
+  width: 700px;
 }
 
 /* Link Styles */
 a:link {
-  color: black;
+  color: #1098ad;
   text-decoration: none;
 }
 a:visited {
-  color: yellow;
+  color: brown;
 }
 a:hover {
   color: black;
