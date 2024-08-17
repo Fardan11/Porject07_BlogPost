@@ -3,75 +3,94 @@
   padding: 0;
 }
 /*Centering content trick, we here specify the div container size then put padding to auto*/
-.center-content {
+/* .center-content {
   width: 700px;
   margin-left: auto;
-  margin-right: auto;
-  /* another way
+  margin-right: auto; */
+/* another way
   margin: 0 auto; */
-}
+/* } */
 body {
   font-family: sans-serif;
   color: #444;
-  border-top: 5px solid #1098ad;
+  border-top: 10px solid #1098ad;
+  position: relative;
 }
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+/* Heading Styles */
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
 nav {
   font-size: 18px;
 }
 article {
-  margin-bottom: 50px;
-}
-/* Heading Styles */
-.main-header {
-  background-color: #f7f7f7;
-  padding: 20px 40px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .post-header {
-  margin: 30px 0px;
+  margin-bottom: 40px;
+  /* position: relative; */
 }
+
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
   color: #1098ad;
-  margin-bottom: 25px;
 }
+
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
 }
+
 h2 {
-  font-size: 25px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
 h4 {
-  font-size: 22px;
+  font-size: 20px;
+  text-transform: uppercase;
   text-align: center;
 }
 
-/* Paragraph Styles */
 p {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
 
-/* List Item Styles */
-/* sudo class */
-
-li {
-  font-size: 15px;
-  margin-left: 30px;
+ul,
+ol {
+  margin-left: 50px;
   margin-bottom: 20px;
 }
-/* li:first-child {
-  font-weight: bold;
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
 }
-li:nth-child(2) {
-  color: red;
-} */
 
 /* Footer Styles */
 footer p {
@@ -101,26 +120,76 @@ footer p {
 
 /* Aside Styles */
 aside {
-  background-color: #f7f7f7a2;
+  background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
   padding: 50px 0;
-  padding-left: 20px;
-  width: 700px;
+  width: 500px;
 }
 
-/* Link Styles */
+/* Styling links */
 a:link {
   color: #1098ad;
   text-decoration: none;
 }
+
 a:visited {
-  color: brown;
+  /* color: #777; */
+  color: #1098ad;
 }
+
 a:hover {
-  color: black;
-}
-a:active {
-  color: red;
+  color: orangered;
   font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+/* resolving conflict */
+
+/* #copyright {
+  color: blue;
+}
+
+.text {
+  color: red;
+}
+footer p {
+  color: green;
+} */
+
+/* we need to position the absolute in relation of the parent element */
+button {
+  font-size: 20px;
+  padding: 15px;
+  position: absolute;
+  cursor: pointer;
+  /* top:50px
+  left:50px */
+  bottom: 50px;
+  right: 50px;
 }
