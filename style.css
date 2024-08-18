@@ -17,7 +17,7 @@ body {
   position: relative;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 30px;
 }
 
@@ -75,7 +75,7 @@ h4 {
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
@@ -141,9 +141,9 @@ a:visited {
 }
 
 a:hover {
-  color: orangered;
+  color: black;
   font-weight: bold;
-  text-decoration: underline orangered;
+  text-decoration: underline black;
 }
 
 a:active {
@@ -197,4 +197,39 @@ button {
 /* FLOATS */
 .author-img {
   float: left;
+  margin-bottom: 20px;
+}
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  background-color: green;
+  width: 825px;
+  float: left;
+}
+aside {
+  background-color: red;
+  width: 300px;
+  float: right;
+}
+footer {
+  background-color: yellow;
+  clear: both;
 }
