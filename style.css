@@ -193,3 +193,8 @@ button {
   bottom: 50px;
   right: 50px;
 }
+
+/* FLOATS */
+.author-img {
+  float: left;
+}
